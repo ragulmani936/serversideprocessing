@@ -91,13 +91,14 @@ from django.contrib import admin
 from django.urls import path
 from app import views
 ~~~ 
-### urlpatterns = [
+urlpatterns = [
 ~~~
     path('admin/', admin.site.urls),
     path("areaofrectangle/",views.areacalculation,name="areaofrectangle"),
     #The below line is to display the html page on our site without /staic/areaofreactangle.
     path("",views.areacalculation,name="areaofrectangleroot"
-~~~    
+~~~
+
 ## OUTPUT:
 ![output]()
 
