@@ -97,6 +97,7 @@ urlpatterns = [
     path("areaofrectangle/",views.areacalculation,name="areaofrectangle"),
     #The below line is to display the html page on our site without /staic/areaofreactangle.
     path("",views.areacalculation,name="areaofrectangleroot"
+    ]
 ~~~
 
 ## OUTPUT:
