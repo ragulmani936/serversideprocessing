@@ -101,7 +101,7 @@ urlpatterns = [
 ~~~
 
 ## OUTPUT:
-![output]()
+![output](https://github.com/ragulmani936/serversideprocessing/blob/main/Screenshot.jpeg)
 
 
 
