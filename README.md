@@ -1,36 +1,23 @@
 # Design a Website for Server Side Processing
 
-## AIM:
+### AIM:
 To design a website to perform mathematical calculations in server side.
 
-## DESIGN STEPS:
-
+### DESIGN STEPS:
 ### Step 1:
-
-
+Desing your website for calculation using wireframe work.
 
 ### Step 2:
-
-
-
-### Step 3:
-
-
+Then to execute the wireframe work desing use html,css
 
 ### Step 4:
-
-
+Mention the path of the website in urls.py.
 
 ### Step 5:
-
-
-
-### Step 6:
-
 Publish the website in the given URL.
-
 ## PROGRAM :
-HTML page:
+### HTML page:
+~~~
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,14 +43,16 @@ HTML page:
             <br/>
             Volume = <input type="text" name="area" value="{{area}}"style="text-align: center;border-radius: 20px;text-align: center;box-shadow: 1.5px 7px #970d0d;background-color:#e97b7b;"> m<sup>3 </sup><br/>
         </form>
-        <u> <h2 style="color: wheat;">By Nithishkumar P</h2></u>
+        <u> <h2 style="color: wheat;">By Ragul M</h2></u>
     </div>
 </body>
 </html>
-views.py:
+~~~
+### views.py:
 from django.shortcuts import render
 
 # Create your views here.
+~~~
 def areacalculation(request):
     context = {}
     context["area"] = "0"
@@ -80,7 +69,9 @@ def areacalculation(request):
         context["h"] = h
         context["l"] = l
     return render(request,"app/area.html",context)
-urls.py:
+~~~
+### urls.py:
+~~~
 """calculation URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -99,12 +90,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app import views
-
-urlpatterns = [
+~~~ 
+### urlpatterns = [
+~~~
     path('admin/', admin.site.urls),
     path("areaofrectangle/",views.areacalculation,name="areaofrectangle"),
     #The below line is to display the html page on our site without /staic/areaofreactangle.
-    path("",views.areacalculation,name="areaofrectangleroot")
+    path("",views.areacalculation,name="areaofrectangleroot"
+~~~    
 ## OUTPUT:
 ![output]()
 
